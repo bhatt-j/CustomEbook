@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codeofthecoders.e_book">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="false"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainDashBoard"
+            android:label="@string/title_activity_main_dash_board"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+       <activity android:name=".CheckActivity"/>
+        <activity android:name=".BookDetailsActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".CategoryBookListActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".AllAuthorActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".FreeBookActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".OpenBookActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".OpenBookAuthorActivty"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".PurchaseBookActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".OpenBookorderActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".PdfActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+
+        <activity android:name=".BookMarkActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".OpenBookMarkActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".ProfileActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".AboutusActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".PrivacyActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+
+
+
+        <activity android:name=".NewArrivalBookActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".CategoryActivity"
+            android:parentActivityName=".MainDashBoard"
+            />
+        <activity android:name=".splashSceenActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>
